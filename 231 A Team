@@ -4,21 +4,17 @@
 using namespace std;
 int main()
 {
-    int n;
-    cin>>n;
+    int n,k;
+    cin>>n>>k;
     int ans=0;
+    int a;
+    
     while(n--){
-        int p, v , t;
-        cin>>p>>v>>t;
-        int x= p+v+t;
-        
-
-        if(x>=2){
+        cin>>a;
+        if(a>=k){
             ans++;
         }
-        
     }
     cout<<ans;
-
     return 0;
 }
